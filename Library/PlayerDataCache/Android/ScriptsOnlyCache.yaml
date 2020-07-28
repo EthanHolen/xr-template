@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ContinuousMovement
     - HandPresence
     - LocomotionController
     Unity.RenderPipelines.Core.Runtime.dll:
@@ -40,6 +41,7 @@ ScriptsOnlyBuild:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.XR.Interaction.Toolkit.dll:
     - UnityEngine.XR.Interaction.Toolkit.LocomotionSystem
+    - UnityEngine.XR.Interaction.Toolkit.SnapTurnProvider
     - UnityEngine.XR.Interaction.Toolkit.TeleportationAnchor
     - UnityEngine.XR.Interaction.Toolkit.TeleportationArea
     - UnityEngine.XR.Interaction.Toolkit.TeleportationProvider
@@ -158,67 +160,71 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11840}
     - Class: 114
-      Script: {instanceID: 11894}
+      Script: {instanceID: 11886}
     - Class: 114
-      Script: {instanceID: 11926}
+      Script: {instanceID: 11892}
     - Class: 114
-      Script: {instanceID: 11972}
+      Script: {instanceID: 11924}
     - Class: 114
-      Script: {instanceID: 12074}
+      Script: {instanceID: 11970}
     - Class: 114
-      Script: {instanceID: 12410}
+      Script: {instanceID: 12072}
     - Class: 114
-      Script: {instanceID: 12456}
+      Script: {instanceID: 12408}
     - Class: 114
-      Script: {instanceID: 12524}
+      Script: {instanceID: 12454}
     - Class: 114
-      Script: {instanceID: 12796}
+      Script: {instanceID: 12522}
     - Class: 114
-      Script: {instanceID: 13046}
+      Script: {instanceID: 12794}
     - Class: 114
-      Script: {instanceID: 13088}
+      Script: {instanceID: 13044}
     - Class: 114
-      Script: {instanceID: 13150}
+      Script: {instanceID: 13086}
     - Class: 114
-      Script: {instanceID: 13226}
+      Script: {instanceID: 13148}
     - Class: 114
-      Script: {instanceID: 13274}
+      Script: {instanceID: 13224}
     - Class: 114
-      Script: {instanceID: 13280}
+      Script: {instanceID: 13272}
     - Class: 114
-      Script: {instanceID: 13578}
+      Script: {instanceID: 13278}
     - Class: 114
-      Script: {instanceID: 13610}
+      Script: {instanceID: 13576}
     - Class: 114
-      Script: {instanceID: 13698}
+      Script: {instanceID: 13608}
     - Class: 114
-      Script: {instanceID: 13708}
+      Script: {instanceID: 13696}
     - Class: 114
-      Script: {instanceID: 13930}
+      Script: {instanceID: 13706}
     - Class: 114
-      Script: {instanceID: 14000}
+      Script: {instanceID: 13928}
     - Class: 114
-      Script: {instanceID: 14022}
+      Script: {instanceID: 13998}
     - Class: 114
-      Script: {instanceID: 14122}
+      Script: {instanceID: 14020}
     - Class: 114
-      Script: {instanceID: 14154}
+      Script: {instanceID: 14120}
     - Class: 114
-      Script: {instanceID: 14184}
+      Script: {instanceID: 14152}
     - Class: 114
-      Script: {instanceID: 14194}
+      Script: {instanceID: 14182}
     - Class: 114
-      Script: {instanceID: 14268}
+      Script: {instanceID: 14192}
     - Class: 114
-      Script: {instanceID: 14534}
+      Script: {instanceID: 14266}
     - Class: 114
-      Script: {instanceID: 14600}
+      Script: {instanceID: 14532}
     - Class: 114
-      Script: {instanceID: 14652}
+      Script: {instanceID: 14598}
     - Class: 114
-      Script: {instanceID: 14752}
+      Script: {instanceID: 14650}
     - Class: 114
-      Script: {instanceID: 14844}
+      Script: {instanceID: 14750}
+    - Class: 114
+      Script: {instanceID: 14842}
+    - Class: 114
+      Script: {instanceID: 14950}
     - Class: 114
       Script: {instanceID: 15054}
     - Class: 114
@@ -234,13 +240,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 15356}
     - Class: 114
-      Script: {instanceID: 15402}
+      Script: {instanceID: 15388}
     - Class: 114
-      Script: {instanceID: 15526}
+      Script: {instanceID: 15404}
     - Class: 114
-      Script: {instanceID: 15532}
+      Script: {instanceID: 15528}
     - Class: 114
-      Script: {instanceID: 17504}
+      Script: {instanceID: 15534}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -252,6 +258,8 @@ ScriptsOnlyBuild:
     - Class: 136
       Script: {instanceID: 0}
     - Class: 137
+      Script: {instanceID: 0}
+    - Class: 143
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -1078,6 +1086,12 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: 1a98b3782880193d2171d87c2c3ca915
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LocomotionController
+  - hash:
+      serializedVersion: 2
       Hash: c5bfd0f6f4664318b8b9f50d88408421
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -1228,6 +1242,12 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
+      Hash: 8a099af213c88a4cab8f43adbd1c590d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ContinuousMovement
+  - hash:
+      serializedVersion: 2
       Hash: 1f0602e7bad1e0a9cba31ce292eee8bb
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
@@ -1292,13 +1312,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 1a98b3782880193d2171d87c2c3ca915
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LocomotionController
   platform: 13
   scenePathNames:
   - Assets/Scenes/Bowling Template.unity
-  playerPath: /Users/ethanholen/Desktop/xr-template/Builds/build1.apk
+  playerPath: /Users/ethanholen/Desktop/xr-template/Builds/walking.apk

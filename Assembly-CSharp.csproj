@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\ContinuousMovement.cs" />
      <Compile Include="Assets\LocomotionController.cs" />
      <Compile Include="Assets\Scripts\HandPresence.cs" />
      <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
