@@ -32,15 +32,19 @@ public class ContinuousMovement : MonoBehaviour
     
     private void FixedUpdate()
     {
+        // headset tracking
         capsuleFollowHeadset();
 
+        // Snap Turn
         Quaternion headYaw = Quaternion.Euler(0, rig.cameraGameObject.transform.eulerAngles.y, 0);
-        Vector3 direction = new Vector3(inputAxis.x, 0, inputAxis.y);
+        Vector3 direction = headYaw * new Vector3(inputAxis.x, 0, inputAxis.y);
 
         character.Move(direction * Time.fixedDeltaTime * speed);
 
+
         // Gravity
         bool isGrounded = checkIfGrounded();
+
         if(isGrounded)
             fallingSpeed = 0;
         else
@@ -60,6 +64,7 @@ public class ContinuousMovement : MonoBehaviour
 
     bool checkIfGrounded()
     {
+        // Tell if on ground
         Vector3 rayStart = transform.TransformPoint(character.center);
         float rayLength = character.center.y + 0.01f;
         bool hasHit = Physics.SphereCast(rayStart, character.radius, Vector3.down, out RaycastHit hitInfo, rayLength, groundLayer);
