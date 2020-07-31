@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - ContinuousMovement
     - HandPresence
     - LocomotionController
+    - Readme
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
     - UnityEngine.Rendering.UI.DebugUIHandlerButton
@@ -37,6 +38,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.PostProcessData
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
+    - UnityEngine.Rendering.Universal.UniversalRenderPipelineEditorResources
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.XR.Interaction.Toolkit.dll:
@@ -1315,4 +1317,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Bowling Template.unity
-  playerPath: /Users/ethanholen/Desktop/xr-template/Builds/walking.apk
+  playerPath: /Users/ethanholen/Desktop/xr-template/Builds/grabbing.apk
