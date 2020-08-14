@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - Gun
     - HandPresence
     - LocomotionController
+    - XROffsetGrabInteractable
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
     - UnityEngine.Rendering.UI.DebugUIHandlerButton
@@ -250,6 +251,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 15530}
     - Class: 114
       Script: {instanceID: 15536}
+    - Class: 114
+      Script: {instanceID: 18432}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1321,7 +1324,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: b033454399c8311e80fd203ae831b322
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: XROffsetGrabInteractable
   platform: 13
   scenePathNames:
   - Assets/Scenes/Bowling Template.unity
-  playerPath: /Users/ethanholen/Dropbox/Unity/xr-template/Builds/grabbing.apk
+  playerPath: /Users/ethanholen/Dropbox/Unity/xr-template/Builds/new-grabbing.apk
