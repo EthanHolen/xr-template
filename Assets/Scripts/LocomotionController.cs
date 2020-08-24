@@ -25,7 +25,7 @@ public class LocomotionController : MonoBehaviour
         {
             rightTeleportRay.gameObject.SetActive(EnableRightTeleport && CheckIfActivated(rightTeleportRay));
         }
-        
+
     }
 
     public bool CheckIfActivated(XRController controller)
