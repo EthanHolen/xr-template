@@ -39,6 +39,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.PostProcessData
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
+    - UnityEngine.Rendering.Universal.UniversalRenderPipelineEditorResources
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.XR.Interaction.Toolkit.dll:
@@ -47,6 +48,8 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.TeleportationAnchor
     - UnityEngine.XR.Interaction.Toolkit.TeleportationArea
     - UnityEngine.XR.Interaction.Toolkit.TeleportationProvider
+    - UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceGraphicRaycaster
+    - UnityEngine.XR.Interaction.Toolkit.UI.XRUIInputModule
     - UnityEngine.XR.Interaction.Toolkit.XRController
     - UnityEngine.XR.Interaction.Toolkit.XRDirectInteractor
     - UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable
@@ -80,9 +83,11 @@ ScriptsOnlyBuild:
     UnityEngine.SpatialTracking.dll:
     - UnityEngine.SpatialTracking.TrackedPoseDriver
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
+    - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
@@ -90,6 +95,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Mask
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
@@ -182,7 +188,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12526}
     - Class: 114
+      Script: {instanceID: 12674}
+    - Class: 114
       Script: {instanceID: 12798}
+    - Class: 114
+      Script: {instanceID: 12820}
     - Class: 114
       Script: {instanceID: 13048}
     - Class: 114
@@ -207,6 +217,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13932}
     - Class: 114
       Script: {instanceID: 14002}
+    - Class: 114
+      Script: {instanceID: 14016}
     - Class: 114
       Script: {instanceID: 14024}
     - Class: 114
@@ -240,6 +252,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 15244}
     - Class: 114
+      Script: {instanceID: 15342}
+    - Class: 114
       Script: {instanceID: 15348}
     - Class: 114
       Script: {instanceID: 15350}
@@ -249,6 +263,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 15392}
     - Class: 114
       Script: {instanceID: 15408}
+    - Class: 114
+      Script: {instanceID: 15440}
     - Class: 114
       Script: {instanceID: 15532}
     - Class: 114
@@ -1104,7 +1120,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 1a98b3782880193d2171d87c2c3ca915
+      Hash: f60fd316e87cfa96dc8b7ae743ab8c14
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LocomotionController
