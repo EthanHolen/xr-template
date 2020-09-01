@@ -57,6 +57,7 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.XRInteractorLineVisual
     - UnityEngine.XR.Interaction.Toolkit.XRRayInteractor
     - UnityEngine.XR.Interaction.Toolkit.XRRig
+    - UnityEngine.XR.Interaction.Toolkit.XRSocketInteractor
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
     Unity.XR.Management.dll:
@@ -193,6 +194,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12798}
     - Class: 114
       Script: {instanceID: 12820}
+    - Class: 114
+      Script: {instanceID: 12990}
     - Class: 114
       Script: {instanceID: 13048}
     - Class: 114
